@@ -1,14 +1,11 @@
-from pydantic import BaseModel, EmailStr
-
+from pydantic import BaseModel
 
 class UserCreateSchema(BaseModel):
-
-    username: str
-    email: EmailStr
+    email: str
     password: str
 
 
 class UserLoginSchema(BaseModel):
 
-    email: EmailStr
+    email: str
     password: str

@@ -1,12 +1,11 @@
 from flask import Flask
-from database import db
-from routers.auth_router import auth_router
-from routers.expense_tracker_router import expense_tracker_router
-
+from app.database.database import db
+from app.routers.auth_router import auth_router
+from app.routers.expense_tracker_router import expense_tracker_router
 
 app = Flask(__name__)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///expense.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:password@localhost/expense_tracker"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 

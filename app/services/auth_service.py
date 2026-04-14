@@ -1,6 +1,7 @@
+from app.exceptions.custom_exceptions import UserAlreadyExists
 from app.models.user import User
 from app.repositories.user_repository import UserRepository
-from app.exceptions.custom_exceptions import UserAlreadyExists
+from app.models.user import User
 
 
 class AuthService:
