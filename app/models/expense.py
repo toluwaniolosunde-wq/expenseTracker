@@ -2,7 +2,7 @@ from datetime import datetime
 from email.policy import default
 
 from app.models.category import Category
-from app.extensions import db
+from app.database.database import db
 
 class Expense(db.Model):
     __tablename__ = 'expenses'

@@ -1,5 +1,5 @@
 from app.models.expense import Expense
-from app.database import db
+from app.database.database import db
 
 
 class ExpenseRepository:

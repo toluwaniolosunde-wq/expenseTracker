@@ -3,7 +3,7 @@ from app.schemas.expense_schema import ExpenseCreateSchema;
 from app.services.expense_tracker_service import ExpenseTrackerService
 
 
-expense_tracker_router = Blueprint("auth", __name__)
+expense_tracker_router = Blueprint("expenses", __name__)
 
 @expense_tracker_router.route("/expenses", methods=["POST"])
 def create_expense():
